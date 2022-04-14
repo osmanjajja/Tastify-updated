@@ -1,5 +1,5 @@
-import Auth from "./components/auth";
-import Dashboard from "./components/dashboard";
+import Auth from "./components/Auth";
+import Dashboard from "./components/Dashboard";
 import { useUserContext } from "./context/userContext";
 
 function App() {

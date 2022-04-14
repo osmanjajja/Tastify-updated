@@ -72,7 +72,5 @@ export const UserContextProvider = ({ children }) => {
     logoutUser,
     forgotPassword,
   };
-  return (
-    <UserContext.Provider value={contextValue}>{children}</UserContext.Provider>
-  );
+  return <UserContext.Provider value={contextValue}>{children}</UserContext.Provider>;
 };
