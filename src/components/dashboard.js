@@ -4,7 +4,7 @@ import { useUserContext } from "../context/userContext";
 const Dashboard = () => {
   const { user, logoutUser } = useUserContext();
   return (
-    <div>
+    <div className="container">
       <h1>Dashboard </h1>
       <h2>Name : {user.displayName}</h2>
       <h2>Email : {user.email}</h2>
