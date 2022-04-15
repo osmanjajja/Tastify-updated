@@ -1,6 +1,8 @@
+import React from "react";
 import Auth from "./components/Auth";
-import Dashboard from "./components/Dashboard";
+import Routings from "./Routing";
 import { useUserContext } from "./context/userContext";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   const { user, loading, error } = useUserContext();
@@ -8,7 +10,7 @@ function App() {
   return (
     <div className="App">
       {error && <p className="error">{error}</p>}
-      {loading ? <h2>Loading...</h2> : <> {user ? <Dashboard /> : <Auth />} </>}
+      {loading ? <h2>Loading...</h2> : <> {user ? <Routings /> : <Auth />} </>}
     </div>
   );
 }

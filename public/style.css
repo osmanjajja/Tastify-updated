@@ -3,6 +3,84 @@
   color: #333;
 }
 
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  flex-direction: column;
+}
+
+input {
+  padding: 12px;
+  margin: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 4px #ccc;
+  border-radius: 6px;
+  font-size: 18px;
+  width: 93%;
+}
+
+button {
+  background-color: #ad343e;
+  border: none;
+  color: white;
+  padding: 12px;
+  margin: 12px 0;
+  box-shadow: 0 1px 6px #ccc;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+.container {
+  display: block;
+  background-color: white;
+  box-shadow: 0 1px 6px #ccc;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  padding: 22px;
+}
+
+.container > p {
+  cursor: pointer;
+  margin: 12px;
+}
+
+.form {
+  width: 100%;
+}
+
+.form > h2 {
+  text-align: center;
+}
+
+.form > form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form > form > p {
+  cursor: pointer;
+}
+
+.error {
+  background-color: tomato;
+  color: white;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: bold;
+  max-width: 400px;
+  margin-bottom: 18px;
+}
+
 body {
   background-color: #81a69b;
   background-image: url("./Food.png");
@@ -230,87 +308,4 @@ header {
 #modal .buttons button {
   display: inline-block;
   margin-right: 15px;
-}
-
-@media only screen and (max-width: 1129px) {
-  header {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    width: 95%;
-    margin: 0 auto;
-    padding: 20px 0px 0px 0px;
-  }
-
-  .search-params {
-    width: 95%;
-  }
-
-  .search-params form {
-    margin-bottom: 20px;
-  }
-
-  .search {
-    width: 55%;
-    padding: 15px;
-    border-radius: 9px;
-    float: left;
-    margin-bottom: 25px;
-  }
-
-  .details {
-    width: 95%;
-    margin: 0 auto;
-    padding: 15px;
-    border-radius: 9px;
-    margin-bottom: 25px;
-  }
-
-  .info {
-    width: 65%;
-  }
-
-  .info h1 {
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .info h2 {
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-
-@media only screen and (max-width: 945px) {
-  .search-params {
-    width: 95%;
-  }
-
-  .search {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .recipe {
-    height: 200px;
-  }
-
-  .info {
-    width: 100%;
-    text-align: center;
-  }
-
-  .image-container {
-    margin: 0 auto;
-    float: none;
-  }
-  .carousel-smaller > img {
-    width: 60px;
-    height: 60px;
-  }
 }
